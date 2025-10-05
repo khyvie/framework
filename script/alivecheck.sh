@@ -10,7 +10,7 @@ while true; do
 
 	# If the server doesn't respond to ping, kill it
 
-	if [ "$(env printf '\xFE' | nc -w 15 0.0.0.0 25565 | wc -m)" -eq 0 ]; then
+	if [ "$(env printf '\xFE' | nc -w 15 0.0.0.0 14427 | wc -m)" -eq 0 ]; then
 		pkill -9 java
 		echo $(date) >> ~/kill.log
 	else
