@@ -70,6 +70,12 @@ while true; do
 		-XX:-UsePerfData \
 		-Dpaper.playerconnection.keepalive=60 \
 		-DIReallyKnowWhatIAmDoingISwear \
+		-Dminecraft.api.env=custom \
+    	-Dminecraft.api.auth.host=https://drasl.cutefox.club/auth \
+   		-Dminecraft.api.account.host=https://drasl.cutefox.club/account \
+    	-Dminecraft.api.profiles.host=https://drasl.cutefox.club/account \
+    	-Dminecraft.api.session.host=https://drasl.cutefox.club/session \
+    	-Dminecraft.api.services.host=https://drasl.cutefox.club/services \
 		\
 		-jar server.jar nogui
 
